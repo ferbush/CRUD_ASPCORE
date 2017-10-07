@@ -1,0 +1,48 @@
+﻿@model ASPCoreCRUD.Models.perfilModel
+
+@{
+    ViewBag.Title = "Editar Perfil";
+}
+
+
+<form asp-action="Edit">
+    <div class="container">
+        <div class="row">
+            <div style="width:25%; height:50%; margin:10% auto;">
+                <input type="text" asp-for="idperfil" hidden="hidden" />
+                <div class="form-group">
+                    <label>Nombre </label>
+                    <input type="text" asp-for="nombre" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Fecha Inscripción:</label>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' asp-for="fechains" class="form-control" />
+
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Fecha Act</label>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' asp-for="fechaact" class="form-control" />
+
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox" asp-for="activo">Activo</label>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-default">Guardar</button>
+            </div>
+        </div>
+    </div>
+</form>

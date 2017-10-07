@@ -1,0 +1,55 @@
+﻿@model ASPCoreCRUD.Models.usuarioModel
+ @{
+     ViewBag.Title = "Crear Usuario";
+
+  }
+
+
+<form asp-action="Edit">
+    <div class="container">
+        <div class="row">
+            <div style="width:25%; height:50%; margin:10% auto;">
+                
+                    <input type="text" asp-for="idusuario" hidden="hidden"/>
+          
+           
+                <div class="form-group">
+                    <label>Nombre Completo: </label>
+                    <input type="text" asp-for="nombrecompleto" class="form-control" id="nombrecompleto">
+                </div>
+                <div class="form-group">
+
+                    <label>Usuario: </label>
+                    <input type="text" asp-for="iniciosesion" class="form-control" id="iniciosesion">
+                </div>
+                <div class="form-group">
+                    <label>Clave: </label>
+                    <input type="password"  asp-for="clave" value="@Model.clave" class="form-control" id="clave">
+                </div>
+             
+                <div class="form-group">
+                    <label>Fecha de Nacimiento </label>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' asp-for="fechanamimiento" value="@Model.fechanamimiento.ToShortDateString()" class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox" asp-for="activo" value="True"/>Activo</label>
+                    </div>
+
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>
+
+                <button type="submit" class="btn btn-default">Guardar</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ASPCoreCRUD.Models.perfilModel> 
+@{
+    ViewBag.Title = "Perfil";
+}
+
+<br />
+<a class="btn btn-info" href="@Url.Action("Create","perfil")">Nuevo</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.idperfil)</td>
+                <td>@Html.DisplayFor(modelItem => item.nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.fechains)</td>
+                <td>@Html.DisplayFor(modelItem => item.fechaact)</td>
+                <td>@Html.DisplayFor(modelItem => item.activo)</td>
+                <td>
+                    <a asp-controller="perfil" asp-action="Edit" asp-route-id="@item.idperfil">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.idperfil" onclick="return confirm('¿Quiere eliminar a @item.nombre?');">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+

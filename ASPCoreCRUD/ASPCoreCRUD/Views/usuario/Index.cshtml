@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ASPCoreCRUD.Models.usuarioModel>
+@{
+    ViewBag.Title = "Usuario";
+}
+
+<div class="container">
+    <h2>Sistemas Expertos</h2>
+    <br />
+    <a class="btn btn-info" href="@Url.Action("Create","usuario")">Nuevo</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre Completo</th>
+                <th>Usuario</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.idusuario)</td>
+                    <td>@Html.DisplayFor(modelItem => item.nombrecompleto)</td>
+                    <td>@Html.DisplayFor(modelItem => item.iniciosesion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.fechanamimiento)</td>
+                    <td>@Html.DisplayFor(modelItem => item.activo)</td>
+                    <td>
+                        <a asp-controller="usuario" asp-action="Edit" asp-route-id="@item.idusuario">Editar</a> |
+                        <a asp-action="Delete" asp-route-id="@item.idusuario" onclick="return confirm('¿Quiere eliminar a @item.nombrecompleto?');">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+</div>
+
+
+

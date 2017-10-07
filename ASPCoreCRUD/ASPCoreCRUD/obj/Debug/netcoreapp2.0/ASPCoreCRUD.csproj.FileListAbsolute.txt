@@ -1,0 +1,11 @@
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\bin\Debug\netcoreapp2.0\ASPCoreCRUD.deps.json
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\bin\Debug\netcoreapp2.0\ASPCoreCRUD.runtimeconfig.json
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\bin\Debug\netcoreapp2.0\ASPCoreCRUD.runtimeconfig.dev.json
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\bin\Debug\netcoreapp2.0\ASPCoreCRUD.dll
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\obj\Debug\netcoreapp2.0\ASPCoreCRUD.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\obj\Debug\netcoreapp2.0\ASPCoreCRUD.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\obj\Debug\netcoreapp2.0\ASPCoreCRUD.AssemblyInfoInputs.cache
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\obj\Debug\netcoreapp2.0\ASPCoreCRUD.AssemblyInfo.cs
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\bin\Debug\netcoreapp2.0\ASPCoreCRUD.pdb
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\obj\Debug\netcoreapp2.0\ASPCoreCRUD.dll
+C:\Users\Carlos Carrillo\Desktop\Windows 10 la florrr\ASPCoreCRUD\ASPCoreCRUD\obj\Debug\netcoreapp2.0\ASPCoreCRUD.pdb

@@ -1,0 +1,50 @@
+﻿@model ASPCoreCRUD.Models.menuModel
+ @{
+     ViewBag.Title = "Editar Menú";
+
+  }
+
+
+<form asp-action="Edit">
+    <div class="container">
+        <div class="row">
+            <div style="width:25%; height:50%; margin:10% auto;">
+                
+                    <input type="text" asp-for="idmenu" hidden="hidden"/>
+          
+           
+                <div class="form-group">
+                    <label>Titulo: </label>
+                    <input type="text" asp-for="titulo" class="form-control" >
+                </div>
+                <div class="form-group">
+
+                    <label>URL: </label>
+                    <input type="text" asp-for="url" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>Icono: </label>
+                    <input type="text"  asp-for="icono"  class="form-control" >
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox" asp-for="activo"/>Activo</label>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label>ID Padre: </label>
+                    <input type="text" asp-for="titulo" class="form-control" value="0">
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>
+
+                <button type="submit" class="btn btn-default">Guardar</button>
+            </div>
+        </div>
+    </div>
+</form>

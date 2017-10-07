@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ASPCoreCRUD.Models.menuModel>
+@{
+    ViewBag.Title = "Menú";
+}
+
+<div class="container">
+    <h2>Sistemas Expertos</h2>
+    <br />
+    <a class="btn btn-info" href="@Url.Action("Create","menu")">Nuevo</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>URL</th>
+                <th>Icono</th>
+                <th>Activo</th>
+                <th>ID Padre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.idmenu)</td>
+                    <td>@Html.DisplayFor(modelItem => item.titulo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.url)</td>
+                    <td>@Html.DisplayFor(modelItem => item.icono)</td>
+                    <td>@Html.DisplayFor(modelItem => item.activo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.idpadre)</td>
+                    <td>
+                        <a asp-controller="menu" asp-action="Edit" asp-route-id="@item.idmenu">Editar</a> |
+                        <a asp-action="Delete" asp-route-id="@item.idmenu" onclick="return confirm('¿Quiere eliminar menú @item.titulo?');">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+</div>
+
+
+
